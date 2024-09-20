@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+    <name>rosbag2_to_csv</name>
+    <version>1.0.0</version>
+    <description>Extracts topics to a csv from a rosbag</description>
+    <maintainer email="taiki.yamada@tier4.jp">Taiki Yamada</maintainer>
+    <license>Apache License 2.0</license>
+
+    <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+    <depend>rclcpp</depend>
+
+    <depend>rosbag2_cpp</depend>
+    <depend>rosbag2_storage</depend>    
+    
+    <build_depend>geometry_msgs</build_depend>
+    <build_depend>nav_msgs</build_depend>
+    <build_depend>sensor_msgs</build_depend>
+    <build_depend>tier4_debug_msgs</build_depend>
+
+    <export>
+        <build_type>ament_cmake</build_type>
+    </export>
+</package>
